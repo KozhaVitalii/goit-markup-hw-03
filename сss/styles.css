@@ -1,0 +1,239 @@
+/* Определяем палитру цвета которую использовал дизайнер при разработке макета */
+/* цвет основного текста SLATE #434455; */
+/* вторичный цвет текста (заголовки) NAVY BLUE #2E2F42 */
+/* цвет бэкграунд акцента #4D5AE5 */
+/* цвет лого header  #4D5AE5 #2E2F42 */
+/* цвет лого footer  #4D5AE5 #F4F4FD */
+/* цвет фона (header) #FFFFFF */
+/* цвет фона (hero + footer) #2E2F42 */
+/* цвет фона (sections) #E5E5E5 */
+/* цвет фона (section Team) #F4F4FD */
+/* цвет фона кнопок #E7E9FC */
+
+/* Задаем основной цвет шрифта и фона */
+:root {
+  --primary-text-color: #434455;
+  --title-text-color-second-bg-color: #2e2f42;
+  --accent-bg-color-button-text-color: #4d5ae5;
+  --first-color: #ffffff;
+  --third-background-color: #e5e5e5;
+  --fourth-background-color: #f4f4fd;
+  --button-background-color: #e7e9fc;
+  --button-bg-active-color: #404bbf;
+}
+
+body {
+  color: var(--primary-text-color);
+  background-color: var(--first-color);
+
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.02em;
+}
+
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Times New Roman", Times, serif;
+} */
+
+/* Задаем цвет лого */
+.logo-top {
+  color: var(--accent-bg-color-button-text-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.logo-top .logo-header {
+  color: var(--title-text-color-second-bg-color);
+}
+.logo-bottom {
+  color: var(--accent-bg-color-button-text-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.logo-bottom .logo-footer {
+  color: var(--fourth-background-color);
+}
+/* Убираем точки в списке */
+/* .list {
+  list-style: none;
+} */
+ul {
+  list-style: none;
+}
+
+/* Стилизуем меню навигации */
+.site-nav .link {
+  color: var(--title-text-color-second-bg-color);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  text-decoration: none;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--primary-text-color);
+}
+.site-nav .link.current,
+.site-nav .link:active {
+  color: var(--accent-bg-color-button-text-color);
+}
+
+/* Стилизуем в шапке контакты */
+.contacts-nav .contacts {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.5;
+  text-decoration: none;
+}
+.contacts-nav .contacts:hover,
+.contacts-nav .contacts:focus {
+  color: var(--accent-bg-color-button-text-color);
+}
+
+/* Стилизуем героя */
+.hero {
+  background-color: var(--title-text-color-second-bg-color);
+}
+.hero-title {
+  color: var(--first-color);
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+}
+.hero-button {
+  color: var(--first-color);
+  background-color: var(--accent-bg-color-button-text-color);
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.19;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+}
+
+.hero-button:active,
+.hero-button:focus {
+  background-color: var(--button-bg-active-color);
+}
+
+/* Стилизуем заголовки секций */
+.section-title {
+  color: var(--title-text-color-second-bg-color);
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+/* Стилизуем заголовки контента внутри секций Future, Team, Portfolio */
+.content-title {
+  color: var(--title-text-color-second-bg-color);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+}
+/* Стилизуем контент внутри секций Future, Team, Portfolio */
+.section-text {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.5;
+}
+/* Section Team */
+.team-background {
+  background-color: var(--fourth-background-color);
+}
+
+/* Стилизуем футер */
+.footer {
+  background-color: var(--title-text-color-second-bg-color);
+}
+.footer-text {
+  color: var(--button-background-color);
+  font-size: 16px;
+  line-height: 1.5;
+}
+/* .address {
+  color: var(--primary-text-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration: none;
+}  */
+/* .footer .address {
+  color: #ffffff;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration: none;
+}
+.footer .address:hover,
+.footer .address:focus {
+  color: var(--accent-color);
+}
+
+.footer .contacts {
+  color: var(--primary-text-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration: none;
+}
+.footer .contacts:hover,
+.footer .contacts:focus {
+  color: var(--accent-color);
+} */
+
+/* Стилизуем страницу Портфолио  */
+
+/* Section filter  */
+
+.filter-button {
+  color: var(--accent-bg-color-button-text-color);
+  background-color: var(--button-background-color);
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--first-color);
+  background-color: var(--accent-bg-color-button-text-color);
+}
+/* Section portfolio  */
+
+.portfolio {
+  text-decoration: none;
+}
+.portfolio .link {
+  text-decoration: none;
+}
+
+.pointer {
+  cursor: pointer;
+}
